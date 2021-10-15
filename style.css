@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #111;
+  --primary: #f0db4f;
+  --secondary: #323330;
+
+  --font-family: Lato, sans-serif;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: var(--secondary);
+}
+
+::selection {
+  color: #fff;
+  background: var(--secondary);
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+header {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.tower {
+  position: absolute;
+  left: 100px;
+  bottom: -20px;
+  width: 100px;
+  height: 300px;
+  background: url("tower.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header > h1 {
+  font-weight: bold;
+  border-top: 4px solid var(--secondary);
+  border-bottom: 4px solid var(--secondary);
+  padding: 20px;
+}
+
+header > h4 {
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  width: 400px;
+  text-align: center;
+}
+
+footer {
+  background-color: #dcdcdc;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+}
